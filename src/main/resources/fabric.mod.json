@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "dailyrewards",
+  "version": "${version}",
+  "name": "Daily Rewards",
+  "description": "Daily login rewards with GUI. Use /rewards or /daily to open the rewards menu.",
+  "authors": ["Jack Goren"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.pokegold.dailyrewards.DailyRewards"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.pokegold.dailyrewards.DailyRewardsClient"
+      }
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-language-kotlin": ">=1.12.0"
+  }
+}
